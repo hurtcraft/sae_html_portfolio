@@ -86,7 +86,7 @@ header.header{
     position: relative;
     width: 30px;
     height: 4px;
-    background-color: black;
+    background-color: var(--body-font-color);
     border-radius: 10px;
     cursor: pointer;
     z-index: 2;
@@ -99,7 +99,7 @@ header.header{
     height: 4px;
     width: 30px;
     right: 0;
-    background-color: black;
+    background-color: var(--body-font-color);
     border-radius: 10px;
     transition: 0.5s;
     width: 30px;
