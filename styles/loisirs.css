@@ -1,0 +1,153 @@
+@import url(styles.css);
+
+h2{
+    margin: 2% 0 2% 5%;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition_anime 0.6s 0.6s ease-out forwards ;
+}
+/*----------------------------------images---------------------------------*/
+
+img{
+    width: 45%;
+    
+}
+.all{
+    display: flex;
+    justify-content: space-around;
+}
+.loisir{
+    width: 90vh;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    
+    position: relative;
+    margin-left: 5%;
+}
+.loisir img:nth-child(1){
+    left: 0;
+    top: 0;
+    position: absolute;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition_anime 0.6s 0.8s ease-out forwards ;
+}
+.loisir img:nth-child(2){
+    right: 0;
+    top: 0;
+    position: absolute;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition_anime 0.6s 1.2s ease-out forwards ;
+}
+
+.loisir img:nth-child(3){
+    bottom: 0;
+    right: 0;
+    position: absolute;    
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition_anime 0.6s 1.6s ease-out forwards ;
+}
+.loisir img:nth-child(4){
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition_anime 0.6s 2s ease-out forwards ;
+}
+/*----------------------------------tableau---------------------------------*/
+
+table{
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition_anime 0.6s 2s ease-out forwards ;
+    width: 35vh;
+    border: 2px solid black;
+    text-align: center;
+    position: relative;
+    
+}
+th{
+    border: 2px solid black;
+}
+tr{
+    border: 2px solid black;
+}
+td{
+    border: 2px solid black;
+    padding: 1%;
+    
+}
+/*----------------------------------Partie Responsive---------------------------------*/
+
+@media screen and (max-width:1200px) {
+    .all{
+        height: 140vh;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        margin-top: 10vh;
+
+    }
+
+
+    h2{
+        margin: 25vh 0 0 5%;
+        text-align: center;
+        
+    }
+    img{
+        width: 50vh;
+        padding-top: 2%;
+        
+    }
+    .loisir img{
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .loisir img:nth-child(1){
+        left: auto;
+        top: auto;
+        position: relative;
+
+        
+    }
+    .loisir img:nth-child(2){
+        right: auto;
+        top: auto;
+        position: relative;
+
+    }
+    
+    .loisir img:nth-child(3){
+        bottom: auto;
+        right: auto;
+        position: relative;
+      
+    }
+    .loisir img:nth-child(4){
+        bottom: auto;
+        left: auto;
+        position: relative;
+
+    }
+    .loisir{
+        width: 80%;
+        height: 170%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    table{
+        margin-top: 5vh;
+        width: 80%;
+    }
+    
+}
+

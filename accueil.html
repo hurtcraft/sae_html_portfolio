@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/accueil.css">
+    <title>Document</title>
+</head>
+<body>
+    <!----------------------------------Navbar--------------------------------->
+
+    <header class="header">
+        <div class="slogans">
+            <H1>DONNONS VIE A VOS IDEES</H1>
+        </div>
+        
+        <div class="nav_bar">
+            
+            <input type="checkbox" class="toggle_menu">
+            <div class="hamburger"></div>  
+
+            <ul class="menu">
+                <li><a href="accueil.html">ACCUEIL</a></li>
+                <li><a href="competences.html">COMPETENCES</a></li>
+                <li><a href="experiences.html">EXPERIENCES</a></li>
+                <li><a href="loisirs.html">LOISIRS</a></li>
+            </ul>
+        </div>
+    </header>
+    <!----------------------------------Profil--------------------------------->
+
+    <div class="mon_profil">
+        <div class="ma_photo">
+            
+            <img src="img/moi.jpg" alt="eza">
+            <h2>Weng Julien</h2>
+        </div>
+        <div class="a_propos_de_moi">
+            <article>
+                <span>Moi c'est Julien</span>
+                <p>Vous vous demandez surement comment j'en suis arrivée là . Eh bien... je suis en 1er année de BUT informatique à Descartes PARIS 16 . 
+                    Je me passione principalement pour le developpement de logiciel et de site web , et je suis là pour donner vie à VOS idées.</p>
+            </article>
+        </div>
+        
+    </div>
+    <!----------------------------------Formulaire--------------------------------->
+
+    <div class="formulaire">
+    <H2>Laissez moi votre contact :)</H2>
+    <form>
+        <div class="row">
+            <div class="col">
+
+              <label for="form-control">Prénom</label>
+              <input type="text" class="form-control" placeholder="Prénom">
+            </div>
+            <div class="col">
+              <label for="form-control">Nom</label>
+              <input type="text" class="form-control" placeholder="Nom">
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrez votre email">
+          <small id="emailHelp" class="form-text text-muted">Votre email est en sécurité avec moi</small>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Un petit message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="En quoi puis je vous aidez ?"></textarea>
+          </div>
+        <button type="submit" class="btn btn-success">Collaborons !</button>
+    </form>
+    </div>
+</body>
+</html>
+
+
+
+
