@@ -1,8 +1,18 @@
 
 /*contient le css commun à toute les pages*/
 
-
-
+:root{
+    /*declaration variable*/
+    --body-background-color:#FFF;
+    --body-font-color:#1b1b1b;
+}
+/*mode sombre adaptatif selon le theme de base*/
+@media(prefers-color-scheme:dark){
+    :root{
+        --body-background-color:#1b1b1b;
+        --body-font-color:#FFF;
+    }
+}
 *{
     margin: 0;
     padding: 0;
@@ -11,12 +21,14 @@
     box-sizing: border-box;
     
 }
+
 body{
     font-family: sans-serif , Arial , Helvetica;
     height: 100vh;
-    
-
+    background-color: var(--body-background-color);
+    color: var(--body-font-color);
 }
+
 .header .slogans h1{
     font-weight: 900;
     margin-left: 12%;
@@ -47,7 +59,6 @@ header.header{
     
 }
 .menu{
-    
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -57,8 +68,7 @@ header.header{
 }
 
 .menu li a{
-    
-    color: black;
+    color: var(--body-font-color);
     display: block;
     padding: 2.2em 1.2em;
     font-size: 1.2rem;

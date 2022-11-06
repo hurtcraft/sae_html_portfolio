@@ -65,19 +65,19 @@ table{
     transform: translateY(-30px);
     animation: apparition_anime 0.6s 2s ease-out forwards ;
     width: 35vh;
-    border: 2px solid black;
+    border: 2px solid var(--body-font-color);
     text-align: center;
     position: relative;
     
 }
 th{
-    border: 2px solid black;
+    border: 2px solid var(--body-font-color);
 }
 tr{
-    border: 2px solid black;
+    border: 2px solid var(--body-font-color);
 }
 td{
-    border: 2px solid black;
+    border: 2px solid var(--body-font-color);
     padding: 1%;
     
 }
